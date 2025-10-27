@@ -25,7 +25,7 @@ services:
     build: ./backend  # ./backend/Dockerfile 사용해서 이미지 빌드
     container_name: fastapi-server
     environment:
-      DATABASE_URL: ${DB_URL}
+      DB_URL: ${DB_URL}
     ports:
       - "8000:8000"
     # depends_on: postgres가 healthy 상태가 된 후에 backend 시작
