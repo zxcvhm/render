@@ -9,11 +9,11 @@ from schema import PostResponse, PostCreate, PostUpdate
 import uvicorn
 import os 
 from pathlib import Path
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-# 환경변수 설정
-ENV_PATH = Path(__file__).parent / '.env'
-load_dotenv(ENV_PATH)
+# # 환경변수 설정
+# ENV_PATH = Path(__file__).parent / '.env'
+# load_dotenv(ENV_PATH)
 
 # 환경변수 가져오기 
 REACT_HOST = os.getenv('REACT_HOST', "react-server")
