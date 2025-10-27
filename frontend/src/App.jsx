@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import {API_BASE_URL} from '.api/config';
+import {API_BASE_URL} from './api/config';
 function App() {
   const [posts, setPosts] = useState([])
   const [title, setTitle] = useState('')
